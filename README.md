@@ -9,6 +9,12 @@ The .fastq files from Illumina outputs were processed using the [nf-core/rnaseq 
 ## Sequence read processing with nf-core/rnaseq
 The `nfcore_rnaseq_run` contains a Slurm script (`run_nfcore_rnaseq.sh`) for execution of the nfcore/rnaseq pipeline. Read processing with this pipeline was carried out at the [Johns Hopkins University DISCOVERY HPC](https://researchit.jhu.edu/research-hpc/) cluster. The sample sheet used as input for nfcore/rnaseq can be found at `data/XXXX`. The reference human genome was obtained from https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/ 
 
+## `data` folder
+The folder contains the sample sheet (`XXXXX`) used as input for the nfcore/rnaseq pipeline, a sample metadata file (`XXXXXX`), and an R object with the color palette used for manuscript figures (`color_palettes.RDS`)
+
+## `coculture_tissues_rnaseq` folder
+
+
 ## Gene expression matrix processing
 The `code/XXXXX` file contains an R script that processes Salmon quantifications resulting from the nfcore/rnaseq pipeline to create a DESeq object for downstream analyses. Filtering of low-expression genes and batch correction via surrogate variable analysis (SVA) was achieved with the code in `code/XXXXX`.
 
@@ -20,6 +26,3 @@ The `code/XXXX` file contains R code to detect enriched gene sets using the fgse
 
 ## `manuscript_figures` script
 The `code/XXXXX` contains R instructions to create the plots assembled for the manuscript.
-
-## `data` folder
-The folder contains the sample sheet (`XXXXX`) used as inout for the nfcore/rnaseq pipeline, a sample metadata file (`XXXXXX`), and an R object with the color palette used for manuscript figures (`color_palettes.RDS`)
